@@ -11,14 +11,9 @@ public class MSDB {
 	
 	public static void createDatabase() throws FileNotFoundException {
 		
-	      //  prompt the user to enter their name
 	      System.out.print("Please enter database name: ");
-	      
-	      //  open up standard input
 	      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	      String dbName = null;
-	      //  read the username from the command-line; need to use try/catch with the
-	      //  readLine() method
 	      try {
 	         dbName = br.readLine();
 	      } catch (IOException ioe) {
